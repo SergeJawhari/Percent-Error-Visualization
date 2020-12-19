@@ -2,6 +2,8 @@ import plotly.graph_objects as go
 import pandas as pd
 import plotly.express as px
 
+# approx = Time we got.
+# exact = Time we set.
 def percentage_error(approx, exact):
     error = (((approx - exact) / exact)*100)
     return error
