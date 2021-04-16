@@ -10,7 +10,7 @@ def percentage_error(approx, exact):
 
 data = pd.read_csv("EvT.csv")
 
-fig = px.line(data, x=data['Sprint'], y=percentage_error(data['Approximate'], data['Exact']))
+fig = px.line(data, x=data['Sprint'], y=percentage_error(data['Approximate'], data['Exact']), text=data['Sprint'])
 
 fig.update_layout(
     title="Percent Errors Visualization",
